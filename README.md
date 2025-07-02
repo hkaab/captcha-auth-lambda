@@ -1,10 +1,3 @@
-# captcha-auth-lambda
-
-Absolutely — here's a polished `README.md` draft for your GitHub repo [`captcha-auth-lambda`](https://github.com/hkaab/captcha-auth-lambda). This version is structured, informative, and GitHub-friendly with markdown formatting:
-
----
-
-```markdown
 # 🛡️ CAPTCHA Auth Lambda
 
 A lightweight, serverless solution to protect your APIs using CAPTCHA verification. This AWS Lambda function validates CAPTCHA tokens (e.g. from Google reCAPTCHA) to prevent bot access, and can be integrated with API Gateway as a custom authorizer or middleware.
@@ -26,7 +19,7 @@ A lightweight, serverless solution to protect your APIs using CAPTCHA verificati
 ├── package.json         # NPM dependencies and scripts
 └── README.md            # Project documentation
 
-````
+```
 
 ## 🧪 Usage
 
@@ -67,6 +60,15 @@ aws lambda create-function \
   --role arn:aws:iam::<your-account-id>:role/<your-lambda-role>
 ```
 
+### 5. Sample Request
+
+Send a request containing the CAPTCHA token:
+
+```json
+{
+  "token": "your-client-captcha-token"
+}
+```
 
 
 ## 📄 License
